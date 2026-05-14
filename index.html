@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xue LI (李雪) | Alibaba Group</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #2b2b2b;
+    line-height: 1.7;
+    font-size: 15px;
+    background: #f7f7f7;
+  }
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 60px;
+  }
+
+  header {
+    position: sticky;
+    top: 50px;
+    align-self: start;
+  }
+  header h1 {
+    font-size: 28px;
+    margin: 0 0 18px 0;
+    font-weight: 600;
+    color: #1a3d5c;
+    line-height: 1.2;
+  }
+  header img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 0 18px 0;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+  }
+  header p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 14.5px;
+  }
+  header a { color: #1772d0; text-decoration: none; word-break: break-all; }
+  header a:hover { text-decoration: underline; }
+
+  section { min-width: 0; }
+  section h1 {
+    font-size: 22px;
+    margin: 0 0 14px 0;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+  }
+  section h1:not(:first-child) { margin-top: 36px; }
+  section p { margin: 12px 0; text-align: justify; }
+  section a { color: #1772d0; text-decoration: none; }
+  section a:hover { text-decoration: underline; }
+
+  .pub p {
+    margin: 0 0 18px 0;
+    text-align: left;
+  }
+  .pub strong.me { color: #111; }
+  .pub .venue { font-weight: 700; }
+
+  .group-year {
+    font-size: 13px;
+    color: #888;
+    font-weight: 600;
+    margin: 24px 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .group-year:first-child { margin-top: 8px; }
+
+  .badge {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+  .badge-corr {
+    background: #d6ecdc;
+    color: #1f6b3a;
+    border: 1px solid #a8d3b6;
+  }
+  .badge-champ {
+    background: #f6e3ee;
+    color: #8a2057;
+    border: 1px solid #d9a8c2;
+  }
+  .author-note {
+    color: #888;
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  @media (max-width: 760px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 30px 20px;
+    }
+    header { position: static; text-align: center; }
+    header img { margin: 0 auto 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header>
+    <h1>Xue LI (李雪)</h1>
+    <img src="photo.jpg" alt="Xue LI">
+    <p>Alibaba Group</p>
+    <p>Hangzhou, China</p>
+    <p><a href="mailto:youli.lx@alibaba-inc.com">youli.lx@alibaba-inc.com</a></p>
+    <p style="margin-top: 14px;">
+      <a href="https://github.com/lixueclaire">GitHub</a> &middot;
+      <a href="https://dblp.org/pid/181/2710-24.html">DBLP</a>
+    </p>
+  </header>
+
+  <section>
+
+    <p>I am a researcher at Alibaba Group, working on the AI inference platform. My current research focuses on large-scale LLM serving systems, including GPU pooling, disaggregated architectures, request scheduling, and inference engine optimizations. I am also the maintainer of <a href="https://github.com/alibaba/ServeGen">ServeGen</a> (a framework for generating realistic LLM serving workloads), a co-creator and PPMC member of <a href="https://github.com/apache/incubator-graphar">Apache GraphAr</a> (a standardized graph storage format), and a developer of <a href="https://github.com/alibaba/GraphScope">GraphScope</a> (a one-stop large-scale graph processing system).</p>
+
+    <p>I received my Ph.D. degree from the <a href="https://madsys.cs.tsinghua.edu.cn/">MADSys Group</a> at Tsinghua University in 2020, under the guidance of Professor <a href="https://madsys.cs.tsinghua.edu.cn/author/yongwei-wu/">Yongwei Wu</a>.</p>
+
+    <h1 id="selected-publications">Selected Publications</h1>
+
+    <div class="pub">
+
+      <div class="group-year">2026</div>
+
+      <p>ServeGen: Workload Characterization and Generation of Large Language Model Serving in Production.<span class="badge badge-corr">Corresponding Author</span>
+      <br>
+      Yuxing Xiang, <strong class="me">Xue Li</strong>, Kun Qian, Yan Zhang, Wenyuan Yu, Ennan Zhai, Xin Jin, Jingren Zhou.
+      <br>
+      USENIX Symposium on Networked Systems Design and Implementation (<span class="venue">NSDI '26</span>).</p>
+
+      <p>Amoeba: Runtime Tensor Parallel Transformation for LLM Inference Services.
+      <br>
+      Haoyu Chen, <strong class="me">Xue Li</strong>, Kun Qian, Yu Guan, Jin Zhao, Xin Wang.
+      <br>
+      ACM/IEEE Design Automation Conference (<span class="venue">DAC '26</span>).</p>
+
+      <p>STAR: Decode-Phase Rescheduling for LLM Inference.
+      <br>
+      Zhibin Wang, Zetao Hong, <strong class="me">Xue Li</strong>, Zibo Wang, Shipeng Li, Qingkai Meng, Qing Wang, Chengying Huan, Rong Gu, Sheng Zhong, Chen Tian.
+      <br>
+      ACM International Symposium on High-Performance Parallel and Distributed Computing (<span class="venue">HPDC '26</span>).</p>
+
+      <p>StriaTrace: Efficient Tracing and Diagnosis for Online LLM Inference.
+      <br>
+      Haonan Wu, Yanqing Chen, Kun Qian, <strong class="me">Xue Li</strong>, Erci Xu, Ennan Zhai, Wenyuan Yu, Jingren Zhou.
+      <br>
+      USENIX Symposium on Operating Systems Design and Implementation (<span class="venue">OSDI '26</span>, Conditionally Accepted).</p>
+
+      <p>Come Hell or Still Water: Alleviating Tail Latency in Cloud Block Store.
+      <br>
+      Chaolei Hu, Kun Qian, Erci Xu, Yifan Shen, Haoran Zhang, <strong class="me">Xue Li</strong>, Yuesheng Gu, Shu Ma, Lingjun Zhu, Fengyuan Ren, Ennan Zhai.
+      <br>
+      USENIX Symposium on Networked Systems Design and Implementation (<span class="venue">NSDI '26</span>).</p>
+
+      <p>CoDec: Prefix-Shared Decoding Kernel for LLMs.
+      <br>
+      Zhibin Wang, Rui Ning, Chao Fang, Zhonghui Zhang, Xi Lin, Shaobo Ma, Mo Zhou, <strong class="me">Xue Li</strong>, Zhongfeng Wang, Chengying Huan, Rong Gu, Kun Yang, Guihai Chen, Sheng Zhong, Chen Tian.
+      <br>
+      ACM SIGMOD International Conference on Management of Data (<span class="venue">SIGMOD '26</span>).</p>
+
+      <div class="group-year">2025</div>
+
+      <p>Aegaeon: Effective GPU Pooling for Concurrent LLM Serving on the Market.<span class="badge badge-corr">Corresponding Author</span>
+      <br>
+      Yuxing Xiang, <strong class="me">Xue Li</strong>, Kun Qian, Yufan Yang, Diwen Zhu, Wenyuan Yu, Ennan Zhai, Xuanzhe Liu, Xin Jin, Jingren Zhou.
+      <br>
+      ACM SIGOPS Symposium on Operating Systems Principles (<span class="venue">SOSP '25</span>).</p>
+
+      <p>GraphAr: An Efficient Storage Scheme for Graph Data in Data Lakes.
+      <br>
+      <strong class="me">Xue Li</strong>, Weibin Zeng, Zhibin Wang, Diwen Zhu, Jingbo Xu, Wenyuan Yu, Jingren Zhou.
+      <br>
+      International Conference on Very Large Data Bases (<span class="venue">VLDB '25</span>).</p>
+
+      <p>Swift Unfolding of Communities: GPU-Accelerated Louvain Algorithm.
+      <br>
+      Zhibin Wang, Xi Lin, Xinxin Liu, <strong class="me">Xue Li</strong>, Pinhuan Wang, Ziheng Meng, Hang Liu, Chen Tian, Sheng Zhong.
+      <br>
+      ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (<span class="venue">PPoPP '25</span>).</p>
+
+      <p>Revisiting Graph Analytics Benchmark.
+      <br>
+      Lingkai Meng, Yu Shao, Long Yuan, Longbin Lai, Peng Cheng, <strong class="me">Xue Li</strong>, Wenyuan Yu, Wenjie Zhang, Xuemin Lin, Jingren Zhou.
+      <br>
+      ACM SIGMOD International Conference on Management of Data (<span class="venue">SIGMOD '25</span>).</p>
+
+      <p>Evolution of Aegis: Fault Diagnosis for AI Model Training Service in Production.
+      <br>
+      Jianbo Dong, Kun Qian, Pengcheng Zhang, Zhilong Zheng, Liang Chen, Fei Feng, Yichi Xu, Yikai Zhu, Gang Lu, <strong class="me">Xue Li</strong>, Zhihui Ren, Zhicheng Wang, Bin Luo, Peng Zhang, Yang Liu, Yanqing Chen, Yu Guan, Weicheng Wang, Chaojie Yang, Yang Zhang, Man Yuan, Hanyu Zhao, Yong Li, Zihan Zhao, Shan Li, Xianlong Zeng, Zhiping Yao, Binzhang Fu, Ennan Zhai, Wei Lin, Chao Wang, Dennis Cai.
+      <br>
+      USENIX Symposium on Networked Systems Design and Implementation (<span class="venue">NSDI '25</span>).</p>
+
+      <p>SkeletonHunter: Diagnosing and Localizing Network Failures in Containerized Large Model Training.
+      <br>
+      Wei Liu, Kun Qian, Zhenhua Li, Tianyin Xu, Yunhao Liu, Weicheng Wang, Yun Zhang, Jiakang Li, Shuhong Zhu, <strong class="me">Xue Li</strong>, Hongfei Xu, Fei Feng, Ennan Zhai.
+      <br>
+      ACM SIGCOMM Conference (<span class="venue">SIGCOMM '25</span>).</p>
+
+      <p>A Survey of Distributed Graph Algorithms on Massive Graphs.
+      <br>
+      Lingkai Meng, Yu Shao, Long Yuan, Longbin Lai, Peng Cheng, <strong class="me">Xue Li</strong>, Wenyuan Yu, Wenjie Zhang, Xuemin Lin, Jingren Zhou.
+      <br>
+      <span class="venue">ACM Computing Surveys</span>, 57(2), 2025.</p>
+
+      <div class="group-year">2024</div>
+
+      <p>Near-Lossless Gradient Compression for Data-Parallel Distributed DNN Training.
+      <br>
+      <strong class="me">Xue Li</strong>, Cheng Guo, Kun Qian, Menghao Zhang, Mengyu Yang, Mingwei Xu.
+      <br>
+      ACM Symposium on Cloud Computing (<span class="venue">SoCC '24</span>).</p>
+
+      <p>GraphScope Flex: LEGO-like Graph Computing Stack.
+      <br>
+      Tao He, Shuxian Hu, Longbin Lai, Dongze Li, Neng Li, <strong class="me">Xue Li</strong>, Lexiao Liu, Xiaojian Luo, Bingqing Lyu, Ke Meng, Sijie Shen, Li Su, Lei Wang, Jingbo Xu, Wenyuan Yu, Weibin Zeng, Lei Zhang, Siyuan Zhang, Jingren Zhou, Xiaoli Zhou, Diwen Zhu. <span class="author-note">(authors in alphabetical order)</span>
+      <br>
+      ACM SIGMOD International Conference on Management of Data (<span class="venue">SIGMOD '24</span>).</p>
+
+      <div class="group-year">2023 and Earlier</div>
+
+      <p>FLASH: A Framework for Programming Distributed Graph Processing Algorithms.
+      <br>
+      <strong class="me">Xue Li</strong>, Ke Meng, Lu Qin, Longbin Lai, Wenyuan Yu, Zhengping Qian, Xuemin Lin, Jingren Zhou.
+      <br>
+      IEEE International Conference on Data Engineering (<span class="venue">ICDE '23</span>).</p>
+
+      <p>Efficient Multi-GPU Graph Processing with Remote Work Stealing.
+      <br>
+      Ke Meng, Liang Geng, <strong class="me">Xue Li</strong>, Qian Tao, Wenyuan Yu, Jingren Zhou.
+      <br>
+      IEEE International Conference on Data Engineering (<span class="venue">ICDE '23</span>).</p>
+
+      <p>SMOG: Accelerating Subgraph Matching on GPUs.<span class="badge badge-champ">&#127942; Graph Challenge Champion</span>
+      <br>
+      Zhibin Wang, Ziheng Meng, <strong class="me">Xue Li</strong>, Xi Lin, Long Zheng, Chen Tian, Sheng Zhong.
+      <br>
+      IEEE High Performance Extreme Computing Conference (<span class="venue">HPEC '23</span>).</p>
+
+      <p>GraphScope: A Unified Engine For Big Graph Processing.
+      <br>
+      Wenfei Fan, Tao He, Longbin Lai, <strong class="me">Xue Li</strong>, Yong Li, Zhao Li, Zhengping Qian, Chao Tian, Lei Wang, Jingbo Xu, Youyang Yao, Qiang Yin, Wenyuan Yu, Kai Zeng, Kun Zhao, Jingren Zhou, Diwen Zhu, Rong Zhu. <span class="author-note">(authors in alphabetical order)</span>
+      <br>
+      International Conference on Very Large Data Bases (<span class="venue">VLDB '21</span>).</p>
+
+      <p>GraphScope: A One-Stop Large Graph Processing System.
+      <br>
+      Jingbo Xu, Zhanning Bai, Wenfei Fan, Longbin Lai, <strong class="me">Xue Li</strong>, Zhao Li, Zhengping Qian, Lei Wang, Yanyan Wang, Wenyuan Yu, Jingren Zhou.
+      <br>
+      International Conference on Very Large Data Bases (<span class="venue">VLDB '21</span>).</p>
+
+      <p>3-D Partitioning for Large-Scale Graph Processing.
+      <br>
+      <strong class="me">Xue Li</strong>, Mingxing Zhang, Kang Chen, Yongwei Wu, Xuehai Qian, Weimin Zheng.
+      <br>
+      <span class="venue">IEEE Transactions on Computers</span>, 70(1), 2021.</p>
+
+      <p>ReGraph: A Graph Processing Framework that Alternately Shrinks and Repartitions the Graph.
+      <br>
+      <strong class="me">Xue Li</strong>, Mingxing Zhang, Kang Chen, Yongwei Wu.
+      <br>
+      ACM International Conference on Supercomputing (<span class="venue">ICS '18</span>).</p>
+
+      <p>Exploring the Hidden Dimension in Graph Processing.
+      <br>
+      Mingxing Zhang, Yongwei Wu, Kang Chen, Xuehai Qian, <strong class="me">Xue Li</strong>, Weimin Zheng.
+      <br>
+      USENIX Symposium on Operating Systems Design and Implementation (<span class="venue">OSDI '16</span>).</p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <small>&copy; 2026 Xue LI</small>
+  </footer>
+
+</div>
+
+</body>
+</html>

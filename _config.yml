@@ -1,0 +1,12 @@
+url: "https://lixueclaire.github.io"
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  smart_quotes: [apos, apos, quot, quot]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

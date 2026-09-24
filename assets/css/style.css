@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2b2b2b;
+  line-height: 1.7;
+  font-size: 15px;
+  background: #f7f7f7;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+}
+
+header {
+  position: sticky;
+  top: 50px;
+  align-self: start;
+}
+header h1 {
+  font-size: 28px;
+  margin: 0 0 18px 0;
+  font-weight: 600;
+  color: #1a3d5c;
+  line-height: 1.2;
+}
+header img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 0 18px 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+}
+header p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 14.5px;
+}
+header .profile-links { margin-top: 14px; }
+header a { color: #1772d0; text-decoration: none; word-break: break-all; }
+header a:hover { text-decoration: underline; }
+
+section { min-width: 0; }
+section h1 {
+  font-size: 22px;
+  margin: 0 0 14px 0;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+}
+section h1:not(:first-child) { margin-top: 36px; }
+section p { margin: 12px 0; text-align: justify; }
+section a { color: #1772d0; text-decoration: none; }
+section a:hover { text-decoration: underline; }
+
+.pub p {
+  margin: 0 0 18px 0;
+  text-align: left;
+}
+.pub strong.me { color: #111; }
+.pub .venue { font-weight: 700; }
+
+.pub h2 {
+  font-size: 13px;
+  color: #888;
+  font-weight: 600;
+  margin: 24px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pub h2:first-child { margin-top: 8px; }
+
+.badge {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 600;
+  font-style: normal;
+  padding: 1px 7px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.badge-corr {
+  background: #d6ecdc;
+  color: #1f6b3a;
+  border: 1px solid #a8d3b6;
+}
+.badge-champ {
+  background: #f6e3ee;
+  color: #8a2057;
+  border: 1px solid #d9a8c2;
+}
+.badge-first {
+  background: #dbeafe;
+  color: #1a56a8;
+  border: 1px solid #93c5fd;
+}
+.author-note {
+  color: #888;
+  font-size: 13px;
+  font-style: italic;
+}
+
+footer {
+  grid-column: 1 / -1;
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+  header { position: static; text-align: center; }
+  header img { margin: 0 auto 18px; }
+}

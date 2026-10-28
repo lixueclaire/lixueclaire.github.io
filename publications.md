@@ -12,6 +12,12 @@
 标题可以使用标准 Markdown 链接：[论文标题](https://example.com/paper)。
 -->
 
+## 2027
+
+Ananke: Performance and Power Modeling for Prefill-Decode Disaggregated LLM Serving.*Co-First Author*{: .badge .badge-first}\
+Yan Zhang, **Xue Li**{: .me}, Kun Qian, Yuxing Xiang, Wenyuan Yu, Xin Jin.\
+ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (**PPoPP '27**{: .venue}).
+
 ## 2026
 
 Batched in Back: Characterizing and Optimizing Offline LLM Inference in Production with ACDC.*Corresponding Author*{: .badge .badge-corr}\
